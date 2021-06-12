@@ -1,0 +1,16 @@
+<svg width="37px" height="32px" viewBox="0 0 37 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-193.000000, -741.000000)">
+            <g id="Backgroud-to-be-animated" transform="translate(172.000000, 103.000000)"></g>
+            <g id="Learn-More" transform="translate(187.000000, 738.000000)">
+                <g id="Learn-More-Icon" transform="translate(25.000000, 18.500000) rotate(180.000000) translate(-25.000000, -18.500000) ">
+                    <rect id="Square" fill-rule="nonzero" x="-2.27373675e-13" y="0" width="50" height="37"></rect>
+                    <path d="M42,17 L42,27.0014319 C42,29.7589306 39.7577202,31.9947729 37.0059354,31.9953225 L13.9940646,31.9999189 C11.2359189,32.0004698 9,29.7551276 9,27.0058284 L9,17" id="Curve" stroke="#1353FE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <circle id="Dot" fill="#FF9F00" fill-rule="nonzero" cx="25" cy="25" r="2"></circle>
+                    <polyline id="Arrowhead" stroke="#6CFF74" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="15 10 25.5 4 36 10"></polyline>
+                    <line x1="25.5" y1="4" x2="25.5" y2="19" id="Arrow-Middle-Line" stroke="#7DFF6C" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

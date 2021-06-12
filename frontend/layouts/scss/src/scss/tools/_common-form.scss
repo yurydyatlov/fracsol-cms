@@ -1,0 +1,50 @@
+.form-common {
+  margin-top: 20px;
+  &__front, &__reg {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--mod-title);
+    margin-bottom: 5px;
+  }
+  &__reg {
+    font-weight: normal;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 44px;
+    box-shadow: 0 1px 0 0 #e5ebef;
+    .row-title {
+      padding-right: 20px;
+      font-size: 1.4rem;
+      font-weight: normal;
+      color: var(--mod-title);
+      text-align: left;
+      white-space: nowrap;
+    }
+    input.row {
+      height: 100%;
+      width: 100%;
+      font-size: 1.4rem;
+      font-weight: 600;
+      letter-spacing: normal;
+      text-align: right;
+      color: var(--mod-title);
+      background: none;
+      border: none;
+    }
+  }
+}
+
+.form-common__item {
+  cursor: text;
+  .simple-input {
+    width: calc(100% - 100px);
+    text-align: right;
+  }
+  .mat-form-field-wrapper {
+    padding-bottom: 1.3rem;
+  }
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="557px" height="449px" viewBox="0 0 557 449" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Slice</title>
+    <defs>
+        <linearGradient x1="50%" y1="133.565594%" x2="50%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#34CCFF" offset="0%"></stop>
+            <stop stop-color="#14C8EA" offset="0%"></stop>
+            <stop stop-color="#5CC766" offset="49.073763%"></stop>
+            <stop stop-color="#80FF22" offset="100%"></stop>
+            <stop stop-color="#213B92" offset="100%"></stop>
+            <stop stop-color="#0B450D" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="30.4401898%" y1="67.1557348%" x2="63.8984948%" y2="35.8776459%" id="linearGradient-2">
+            <stop stop-color="#FFE524" offset="0%"></stop>
+            <stop stop-color="#890A7D" offset="98.4402316%"></stop>
+            <stop stop-color="#061037" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="43.6234473%" y1="33.2537121%" x2="71.108498%" y2="64.2741735%" id="linearGradient-3">
+            <stop stop-color="#0E136F" offset="0%"></stop>
+            <stop stop-color="#F10D8A" offset="53.9981235%"></stop>
+            <stop stop-color="#F00D8A" offset="100%"></stop>
+            <stop stop-color="#C6ABAB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M276.499953,285 L530.999953,423.666667 L529.962363,423.666607 C530.649116,424.142371 530.999953,424.624183 530.999953,425.111111 C530.999953,433.886302 417.056422,441 276.499953,441 C135.943484,441 21.9999532,433.886302 21.9999532,425.111111 C21.9999532,424.624183 22.3507903,424.142371 23.0375438,423.666607 L21.9999532,423.666667 L276.499953,285 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>
+        <path d="M284.999953,11 L285.646953,12.005 C292.637409,7.10498514 354.19765,89.2295565 423.672927,196.026318 L425.780613,199.270072 C496.114366,307.642626 547.409046,399.507239 540.350584,404.455571 C539.878338,404.78661 539.156867,404.720224 538.200569,404.275654 L538.66733,405 L287.595761,269.147642 L285.03254,14.5916078 C284.992384,14.1335515 284.98929,13.7300982 285.023939,13.3824669 L284.999953,11 Z" id="Combined-Shape" fill="url(#linearGradient-2)"></path>
+        <path d="M266.999953,11 L264.408908,269.147642 L13.7979433,405 L14.5044994,403.900598 C13.191231,404.667216 12.2300924,404.864282 11.648131,404.455585 C4.60262784,399.507238 55.8032471,307.642569 126.00802,199.269947 C196.212794,90.8973246 258.836602,7.05525624 265.882316,12.0032893 C265.991428,12.079923 266.08657,12.1774026 266.167888,12.2954665 L266.999953,11 Z" id="Combined-Shape" fill="url(#linearGradient-3)"></path>
+        <text id="TEAM" transform="translate(403.690184, 304.797476) rotate(27.000000) translate(-403.690184, -304.797476) " font-family="Geneva" font-size="40" font-weight="normal" fill="#FFFFFF">
+            <tspan x="336.768255" y="316.771149">TEAM</tspan>
+        </text>
+        <text id="BOARD" transform="translate(191.383632, 274.508426) rotate(-28.000000) translate(-191.383632, -274.508426) " font-family="Geneva" font-size="40" font-weight="normal" fill="#FFFFFF">
+            <tspan x="119.206054" y="286.482098">BOARD</tspan>
+        </text>
+        <text id="OUR-STORY" font-family="Geneva" font-size="40" font-weight="normal" fill="#FFFFFF">
+            <tspan x="165.248" y="416">OUR STORY</tspan>
+        </text>
+    </g>
+</svg>

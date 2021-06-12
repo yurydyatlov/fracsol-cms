@@ -1,0 +1,64 @@
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__item {
+    flex: 1 0 25%;
+    max-width: 25%;
+    opacity: 0.87;
+    font-size: 1.7rem;
+    line-height: 1.6rem;
+    text-align: center;
+    color: #c2cbe9;
+    margin-top: 25px;
+
+    &.col-three {
+      flex: 1 0 33%;
+      max-width: 33%;
+    }
+
+    &__fullname {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    &__title {
+      font-size: 1.4rem;
+      line-height: 1.6rem;
+      margin-top: 5px;
+    }
+
+    &__extra-title {
+      font-size: 1.4rem;
+      line-height: 1.6rem;
+      margin-top: 2px;
+    }
+  }
+}
+
+.avatar-box {
+  background-image: linear-gradient(to bottom, #ff762d, #f7e464);;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  position: relative;
+  padding: 2px;
+  margin: 0 auto;
+
+  &__image {
+    background-color: #1B2136;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+  }
+
+  &__photo-cont {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+}

@@ -1,0 +1,21 @@
+input, textarea, select {
+  font-family: var(--main-font);
+}
+
+.common-input {
+  border: none;
+  font-size: 1.3rem;
+  font-weight: normal;
+  color: #3a405b;
+  width: 100%;
+  &.border--true {
+    border: 1px solid #dce1e875;
+    padding: 8px 4px 8px 10px !important;
+  }
+}
+
+.form-var-field {
+  .mat-form-field-wrapper {
+    padding-bottom: 0!important;
+  }
+}

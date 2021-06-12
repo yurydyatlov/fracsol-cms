@@ -1,58 +1,63 @@
 const strapiBaseUri = process.env.API_URL || "http://localhost:1337";
-
 export default {
-  target: "static",
-  env: {
-    strapiBaseUri,
-  },
-  head: {
-    meta: [
-      { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
+    target: "static",
+    env: {
+        strapiBaseUri,
+    },
+    head: {
+        meta: [
+            {charset: "utf-8"},
+            {name: "viewport", content: "width=device-width, initial-scale=1"},
+        ],
+        link: [
+        ],
+    },
+    /*
+     ** Global CSS
+     */
+    css: [
+        '@/layouts/scss/main'
     ],
-    link: [
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css?family=Staatliches",
-      },
+    plugins: [
+        '~/plugins/globals.js',
+        {src: "~/plugins/aos", ssr: false}
     ],
-  },
-  /*
-   ** Global CSS
-   */
-  css: [
-    "uikit/dist/css/uikit.min.css",
-    "uikit/dist/css/uikit.css",
-    "@assets/css/main.css",
-  ],
-  plugins: [{ src: "~/plugins/uikit.js", ssr: false }],
-  modules: ["@nuxtjs/markdownit", "@nuxtjs/strapi"],
-  strapi: {
-    url: strapiBaseUri,
-    entities: [
-      {
-        name: "articles",
-        type: "collection",
-      },
-      {
-        name: "categories",
-        type: "collection",
-      },
-      {
-        name: "homepage",
-        type: "single",
-      },
-      {
-        name: "global",
-        type: "single",
-      },
+    components: true,
+    modules: [
+        '@aceforth/nuxt-optimized-images',
+        ['vue-scrollto/nuxt', { offset: -59 }],
+        "@nuxtjs/markdownit",
+        "@nuxtjs/strapi"
     ],
-  },
-  markdownit: {
-    preset: "default",
-    linkify: true,
-    breaks: true,
-    injected: true,
-    html: true,
-  },
+    optimizedImages: {
+        optimizeImages: true,
+    },
+    strapi: {
+        url: strapiBaseUri,
+        entities: [
+            {
+                name: "articles",
+                type: "collection",
+            },
+            {
+                name: "categories",
+                type: "collection",
+            },
+            {
+                name: "homepage",
+                type: "single",
+            },
+            {
+                name: "global",
+                type: "single",
+            },
+        ],
+    },
+    markdownit: {
+        preset: "default",
+        linkify: true,
+        breaks: true,
+        injected: true,
+        html: true,
+    },
 };

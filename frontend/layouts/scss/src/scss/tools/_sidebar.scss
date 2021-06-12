@@ -1,0 +1,34 @@
+.page-outlet__sidebar {
+  min-width: 350px;
+  height: calc(100vh - var(--top-bar-height) - 22px);
+  position: relative;
+  z-index: 999;
+  &-container {
+    background-color: #f2f5f7;
+  }
+  h2.sidebar-title {
+    font-size: 2.1rem;
+    font-weight: bold;
+    color: var(--mod-title);
+    text-align: center;
+    margin: 0;
+    &.sm {
+      font-size: 1.6rem;
+    }
+  }
+}
+.sidebar-row {
+  padding: 30px;
+}
+
+.sidebar-row-sep {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: var(--mod-title);
+  height: 34px;
+  background-color: #ccd8e1;
+  padding-left: 30px;
+}

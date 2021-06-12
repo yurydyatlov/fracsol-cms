@@ -1,0 +1,59 @@
+[
+  {
+    "name": "about-us",
+    "path": "/about-us",
+    "component": "/Users/yuradyatlov/Projects/fracsol-cms/frontend/pages/about-us.vue",
+    "chunkName": "pages/about-us",
+    "_name": "_0fc1ea67"
+  },
+  {
+    "path": "/fracsol",
+    "component": "/Users/yuradyatlov/Projects/fracsol-cms/frontend/pages/fracsol.vue",
+    "chunkName": "pages/fracsol",
+    "children": [
+      {
+        "name": "fracsol",
+        "path": "",
+        "component": "/Users/yuradyatlov/Projects/fracsol-cms/frontend/pages/fracsol/index.vue",
+        "chunkName": "pages/fracsol/index",
+        "_name": "_45481ba8"
+      },
+      {
+        "name": "fracsol-fdi",
+        "path": "fdi",
+        "component": "/Users/yuradyatlov/Projects/fracsol-cms/frontend/pages/fracsol/fdi.vue",
+        "chunkName": "pages/fracsol/fdi",
+        "_name": "_0b6268c5"
+      },
+      {
+        "name": "fracsol-owm",
+        "path": "owm",
+        "component": "/Users/yuradyatlov/Projects/fracsol-cms/frontend/pages/fracsol/owm.vue",
+        "chunkName": "pages/fracsol/owm",
+        "_name": "_081eefdf"
+      },
+      {
+        "name": "fracsol-twm",
+        "path": "twm",
+        "component": "/Users/yuradyatlov/Projects/fracsol-cms/frontend/pages/fracsol/twm.vue",
+        "chunkName": "pages/fracsol/twm",
+        "_name": "_109e1824"
+      }
+    ],
+    "_name": "_5460c32e"
+  },
+  {
+    "name": "technology-and-solutions",
+    "path": "/technology-and-solutions",
+    "component": "/Users/yuradyatlov/Projects/fracsol-cms/frontend/pages/technology-and-solutions.vue",
+    "chunkName": "pages/technology-and-solutions",
+    "_name": "_6d0b00a8"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/yuradyatlov/Projects/fracsol-cms/frontend/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_78fc73ce"
+  }
+]

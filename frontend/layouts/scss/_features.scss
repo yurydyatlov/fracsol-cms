@@ -1,0 +1,39 @@
+.features {
+  justify-content: center;
+  margin-top: -25px;
+  &__item {
+    margin-top: 75px;
+    border-radius: 12px;
+    background-image: radial-gradient(circle at 50% 0, #3a3e67, #1b2037 85%);
+    padding-bottom: 25px;
+    min-height: 244px;
+    &--header {
+      margin: 0 auto;
+      height: 100px;
+      position: relative;
+      top: -25px;
+      max-width: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 11px;
+      background-color: #34385e;
+      img {
+        width: 65px;
+      }
+    }
+    &--title {
+      font-weight: 500;
+      text-align: center;
+    }
+    &--desc {
+      margin-top: 5px;
+      font-weight: 400;
+      font-size: 1.3rem;
+      padding: 0 25px;
+      line-height: 15px;
+      text-align: center;
+
+    }
+  }
+}

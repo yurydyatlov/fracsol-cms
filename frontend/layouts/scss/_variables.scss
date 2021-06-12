@@ -1,0 +1,27 @@
+:root {
+  --main-font: 'gilroy', sans-serif;
+  --main-color: white;
+  --border-gray: #e5ebef;
+  --green: #5ac900;
+  --new-gray: #E7EBF4;
+  --secondary-color: #50c2ec;
+  --gray: #f2f5f7;
+  --bg-color: #2A314E;
+
+  --common-widget-color: #3E4262;
+  --link-color: #C2CBE9;
+
+  --top-bar-height: 85px;
+  --sidebar-width: 75px;
+  --input-height: 35px;
+  @include min-screen(1200px) {
+    --input-height: 40px;
+  }
+}
+
+$xs: 480px;
+$sm: 768px;
+$md: 980px;
+$lg: 1280px;
+$xl: 1440px;
+$xxl: 1900px;

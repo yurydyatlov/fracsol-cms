@@ -1,51 +1,115 @@
 <template>
-  <div>
-    <div class="uk-section">
-      <div class="uk-container uk-container-large">
-        <h1>{{ homepage.hero.title }}</h1>
-        <Articles :articles="articles" />
-      </div>
+
+  <div class="index-page">
+
+    <top-navigation></top-navigation>
+
+    <div style="position: relative;">
+      <div class="slider"></div>
+      <div class="bg-curve-line"></div>
     </div>
+
+    <section id="con" class="content-begin"></section>
+
+    <section>
+      <div class="section-with-bg section-standart incline-section">
+        <div class="full-height--center" style="position: relative;z-index: 2;">
+          <div class="row">
+            <div class="column column-40 centered-column" data-aos="fade-up">
+
+              <div class="container">
+                <div class="title-max-width">
+
+                  <h1 class="header-title header-title--white title-add-shadow">
+                    Take your rock stimulation to the next level!
+                  </h1>
+
+                  <div class="common-text sm common-text--white">
+                    We have developed advanced solutions to track, predict, and reduce the impact of frac interactions.
+                  </div>
+                </div>
+
+                <br />
+
+                <a class="button button-link button-link--white button-clear adjusted">
+                  <img src="~assets/images/url.svg">Learn More</a>
+              </div>
+
+            </div>
+
+            <div class="column column-60 column--no-padding align-content-right" data-aos="flip-up">
+              <img src="~assets/images/home-iot.png" />
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <Features></Features>
+    </section>
+
+    <footer-main></footer-main>
+
   </div>
+
+
 </template>
 
 <script>
-import Articles from "../components/Articles";
-import { getMetaTags } from "../utils/seo";
-import { getStrapiMedia } from "../utils/medias";
+
+import TopNavigation from "@/layouts/components/top-navigation";
+import FooterMain from "@/layouts/components/footer-main";
+import Features from "~/layouts/components/features";
 
 export default {
-  components: {
-    Articles,
-  },
-  async asyncData({ $strapi }) {
+  components: {Features, FooterMain, TopNavigation},
+  data() {
     return {
-      articles: await $strapi.find("articles"),
-      homepage: await $strapi.find("homepage"),
-      global: await $strapi.find("global"),
-    };
+      animating: false,
+      mountains: ['ready', 'to', 'test']
+    }
+  },
+  beforeMount() {
+  },
+  mounted() {
+  },
+  methods: {
+    scrollToElement() {
+
+      /*this.scrollTo(null, 55);*/
+
+      /*bringIntoView(document.querySelector('#con'), 400);*/
+      this.$forceUpdate()
+
+      /*el.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});*/
+
+      /*if (el) {
+        el.scrollIntoView({
+          block: "start",
+          behavior: "smooth",
+        });
+      }*/
+    },
   },
   head() {
-    const { seo } = this.homepage;
-    const { defaultSeo, favicon, siteName } = this.global;
-
-    // Merge default and article-specific SEO data
-    const fullSeo = {
-      ...defaultSeo,
-      ...seo,
-    };
-
     return {
-      titleTemplate: `%s | ${siteName}`,
-      title: fullSeo.metaTitle,
-      meta: getMetaTags(fullSeo),
-      link: [
-        {
-          rel: "favicon",
-          href: getStrapiMedia(favicon.url),
-        },
-      ],
+      title: "Opla Energy"
     };
-  },
-};
+  }
+}
 </script>
+
+<style>
+
+.skew-element-line {
+  position: absolute;
+  bottom: 24px;
+  right: 0;
+  width: 500px;
+  height: 79px;
+  transform: skewY(5.5deg);
+  background-color: var(--darker-main-color);
+}
+</style>
