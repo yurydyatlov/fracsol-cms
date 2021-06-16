@@ -4,9 +4,11 @@ import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
 const _0fc1ea67 = () => interopDefault(import('../pages/about-us.vue' /* webpackChunkName: "pages/about-us" */))
+const _490d8ab2 = () => interopDefault(import('../pages/contact.vue' /* webpackChunkName: "pages/contact" */))
 const _5460c32e = () => interopDefault(import('../pages/fracsol.vue' /* webpackChunkName: "pages/fracsol" */))
 const _45481ba8 = () => interopDefault(import('../pages/fracsol/index.vue' /* webpackChunkName: "pages/fracsol/index" */))
 const _0b6268c5 = () => interopDefault(import('../pages/fracsol/fdi.vue' /* webpackChunkName: "pages/fracsol/fdi" */))
+const _de701f96 = () => interopDefault(import('../pages/fracsol/ml.vue' /* webpackChunkName: "pages/fracsol/ml" */))
 const _081eefdf = () => interopDefault(import('../pages/fracsol/owm.vue' /* webpackChunkName: "pages/fracsol/owm" */))
 const _109e1824 = () => interopDefault(import('../pages/fracsol/twm.vue' /* webpackChunkName: "pages/fracsol/twm" */))
 const _6d0b00a8 = () => interopDefault(import('../pages/technology-and-solutions.vue' /* webpackChunkName: "pages/technology-and-solutions" */))
@@ -33,6 +35,10 @@ export const routerOptions = {
     component: _0fc1ea67,
     name: "about-us"
   }, {
+    path: "/contact",
+    component: _490d8ab2,
+    name: "contact"
+  }, {
     path: "/fracsol",
     component: _5460c32e,
     children: [{
@@ -43,6 +49,10 @@ export const routerOptions = {
       path: "fdi",
       component: _0b6268c5,
       name: "fracsol-fdi"
+    }, {
+      path: "ml",
+      component: _de701f96,
+      name: "fracsol-ml"
     }, {
       path: "owm",
       component: _081eefdf,

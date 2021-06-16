@@ -1,8 +1,8 @@
 {
-  "name": "frontend",
+  "name": "fracsol_web",
   "version": "1.0.0",
-  "description": "My polished Nuxt.js project",
-  "author": "You",
+  "description": "Fracsol Web",
+  "author": "Yury Dyatlov",
   "private": true,
   "scripts": {
     "dev": "nuxt",

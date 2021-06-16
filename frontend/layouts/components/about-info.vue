@@ -8,9 +8,9 @@
             <div class="mirrored-box__content">
 
               <div class="about-us-info__content">
-                <svg class="info-diagram" width="600px" height="auto" viewBox="0 0 557 449" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                     xmlns:xlink="http://www.w3.org/1999/xlink">
+                <svg class="info-diagram" width="600px" height="auto" viewBox="0 0 557 449" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <defs>
+
                     <linearGradient x1="50%" y1="133.565594%" x2="50%" y2="0%" id="linearGradient-1">
                       <stop stop-color="#34CCFF" offset="0%"></stop>
                       <stop stop-color="#14C8EA" offset="0%"></stop>
@@ -19,6 +19,7 @@
                       <stop stop-color="#213B92" offset="100%"></stop>
                       <stop stop-color="#0B450D" offset="100%"></stop>
                     </linearGradient>
+
                     <linearGradient x1="30.4401898%" y1="67.1557348%" x2="63.8984948%" y2="35.8776459%"
                                     id="linearGradient-2">
                       <stop stop-color="#FFE524" offset="0%"></stop>

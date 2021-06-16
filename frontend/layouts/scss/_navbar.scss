@@ -1,0 +1,74 @@
+.navbar {
+  padding-right: 50px;
+  height: 60px;
+  top: 0;
+  padding-top: 10px;
+  position: fixed;
+  width: 100vw;
+  z-index: 9999;
+  transition: all 333ms ease;
+  display: flex;
+  justify-content: flex-end;
+  .sub-menu {
+    position: absolute;
+    left: -35px;
+    width: 220px;
+    top: 60px;
+    display: block;
+    background: radial-gradient(circle at 50% 0, #3a3e67, #1b2037 48%);
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px #0c0e18;
+    li {
+      float: none;
+      padding: 10px 15px;
+      margin-bottom: 0;
+      a {
+        text-transform: capitalize;
+        white-space: nowrap;
+        padding: 0;
+        padding-bottom: 5px;
+        font-size: 1.4rem;
+        font-weight: 500;
+        opacity: .8;
+        border-bottom: 1px solid rgba(white, .05);
+        &:hover, &.active {
+          opacity: 9;
+          border-bottom: 1px solid rgba(white, .3)
+        }
+      }
+    }
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    padding: 20px 50px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    background-size: 0 3px, auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: all .2s ease-out;
+    text-shadow: 0 1px 3px #272727;
+    &.nuxt-link-active {
+      text-shadow: 0 1px 3px #24ADE3;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .top-menu > li {
+    float: left;
+    margin-bottom: 0;
+    position: relative;
+
+  }
+}

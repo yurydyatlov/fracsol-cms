@@ -31,14 +31,16 @@
 
                 <br />
 
-                <a class="button button-link button-link--white button-clear adjusted">
-                  <img src="~assets/images/url.svg">Learn More</a>
+                <div class="center-m-o">
+                  <a class="button button-link button-link--white button-clear adjusted">
+                    <img src="~assets/images/url.svg" alt="Learn More">Learn More</a>
+                </div>
               </div>
 
             </div>
 
             <div class="column column-60 column--no-padding align-content-right" data-aos="flip-up">
-              <img src="~assets/images/home-iot.png" />
+              <img src="~assets/images/home-iot.png" alt="Home IOT" />
             </div>
 
           </div>
@@ -61,14 +63,13 @@
 
 import TopNavigation from "@/layouts/components/top-navigation";
 import FooterMain from "@/layouts/components/footer-main";
-import Features from "~/layouts/components/features";
+import Features from "@/layouts/components/features";
 
 export default {
   components: {Features, FooterMain, TopNavigation},
   data() {
     return {
-      animating: false,
-      mountains: ['ready', 'to', 'test']
+      animating: false
     }
   },
   beforeMount() {
@@ -95,21 +96,8 @@ export default {
   },
   head() {
     return {
-      title: "Opla Energy"
+      title: "Fracsol - Revsolz"
     };
   }
 }
 </script>
-
-<style>
-
-.skew-element-line {
-  position: absolute;
-  bottom: 24px;
-  right: 0;
-  width: 500px;
-  height: 79px;
-  transform: skewY(5.5deg);
-  background-color: var(--darker-main-color);
-}
-</style>

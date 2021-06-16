@@ -10,6 +10,19 @@
       <FdiFeatures></FdiFeatures>
     </section>
 
+    <section class="section-standart">
+      <div class="video-bg">
+        <img :src="`${ require('~/assets/images/fdi-screen-bg.png') }`" class="video-img" alt="TWM Video Bg">
+
+        <div class="video-player-abs">
+          <div class="video-player">
+            <img style="cursor: pointer;" :src="`${ require('~/assets/images/fdi-player.png') }`" />
+          </div>
+        </div>
+      </div>
+
+    </section>
+
     <footer-main></footer-main>
 
   </div>
@@ -55,7 +68,7 @@ export default {
   },
   head() {
     return {
-      title: "Opla Energy"
+      title: "FDI - Revsolz"
     };
   }
 }

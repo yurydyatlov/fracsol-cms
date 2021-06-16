@@ -5,7 +5,7 @@
         © {{ year }} RevSolz Corp.
       </div>
       <div class="container">
-        <div class="row">
+        <div class="row contact-footer">
           <div class="column column-33">
             <div class="contact-info">
               <img src="~assets/images/phone.png" alt="Tel No" />

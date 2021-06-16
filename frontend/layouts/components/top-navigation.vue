@@ -9,14 +9,13 @@
     </svg>
 
     <div class="logo-form">
-
       <NuxtLink :to="'/'" class="logo-top">
         <img alt="fracsol-logo" src="~assets/images/logo.svg" />
       </NuxtLink>
     </div>
 
     <ul class="top-menu">
-      <li v-for="item of nav" :key="item.route" @mouseenter="mouseEnter(item)" @mouseleave="mouseLeave(item)">
+      <li v-for="item of nav" @mouseenter="mouseEnter(item)" @mouseleave="mouseLeave(item)">
         <NuxtLink :to="'/' + item.route">
           {{ item.title }}
         </NuxtLink>
@@ -50,10 +49,12 @@ export default {
       menuActive: false,
       nav: [
         {
+          id: 'home',
           title: 'Home',
           route: ''
         },
         {
+          id: 'about-us',
           title: 'About Us',
           route: 'about-us',
         },

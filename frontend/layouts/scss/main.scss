@@ -18,6 +18,8 @@ $color-quinary: #e1e1e1;
 @import "features";
 @import "common-elements";
 @import "team-members";
+@import "contact-form";
+@import "navbar";
 
 .logo-header {
   position: absolute;
@@ -84,6 +86,10 @@ body {
   font-weight: normal;
   font-size: 1.5rem;
   overflow-x: hidden;
+  background-image: url('~assets/images/dot-bg.png');
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-position-y: 100px;
 }
 
 
@@ -577,91 +583,10 @@ section {
   text-align: center;
 }
 
-.navbar {
-  padding-right: 50px;
-  height: 60px;
-}
-
 .nav-item-cont {
   display: flex;
   justify-content: flex-end;
   width: 100%;
-}
-
-.navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar .top-menu > li {
-  float: left;
-  margin-bottom: 0;
-  position: relative;
-
-}
-
-.navbar li a {
-  display: block;
-  color: white;
-  text-align: center;
-  font-size: 14px;
-  padding: 20px 50px;
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: capitalize;
-  background-size: 0 3px, auto;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  transition: all .2s ease-out;
-  text-shadow: 0 1px 3px #272727;
-  &.nuxt-link-active {
-    text-shadow: 0 1px 3px #24ADE3;
-  }
-}
-
-.navbar li a:hover, .navbar .nuxt-link-active {
-}
-
-.navbar {
-  top: 0;
-  padding-top: 10px;
-  position: fixed;
-  width: 100vw;
-  z-index: 9999;
-  transition: all 333ms ease;
-  display: flex;
-  justify-content: flex-end;
-  .sub-menu {
-    position: absolute;
-    left: -35px;
-    width: 220px;
-    top: 60px;
-    display: block;
-    background: radial-gradient(circle at 50% 0, #3a3e67, #1b2037 48%);
-    padding: 10px 0;
-    border-radius: 10px;
-    box-shadow: 0 1px 3px #0c0e18;
-    li {
-      float: none;
-      padding: 10px 15px;
-      margin-bottom: 0;
-      a {
-        text-transform: capitalize;
-        white-space: nowrap;
-        padding: 0;
-        padding-bottom: 5px;
-        font-size: 1.4rem;
-        font-weight: 500;
-        opacity: .8;
-        border-bottom: 1px solid rgba(white, .05);
-        &:hover, &.active {
-          opacity: 9;
-          border-bottom: 1px solid rgba(white, .3)
-        }
-      }
-    }
-  }
 }
 
 .logo-form {
@@ -709,10 +634,6 @@ $radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.main-win {
-
 }
 
 .items {
@@ -996,7 +917,8 @@ $radius: 4px;
 }
 
 .d-f-center {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .opla-logo-cont {
@@ -1102,10 +1024,16 @@ $radius: 4px;
     text-align: center;
     font-size: 2.1rem;
     color: rgba(#c2cbe9, .4);
+    &.italic {
+      font-size: 1.6rem;
+      color: #C2CBE9;
+      font-style: italic;
+    }
     &.full-opacity {
       font-size: 1.8rem;
       line-height: 2.3rem;
       color: #c2cbe9;
+      opacity: 1;
     }
   }
   &__title {
@@ -1124,6 +1052,13 @@ $radius: 4px;
   left: 40px;
   top: 20px;
   opacity: .5;
+}
+
+.left-cut-bg-container {
+  width: 270px;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .right-bg-container {
@@ -1170,6 +1105,46 @@ $radius: 4px;
   text-align: left;
   line-height: 1.8rem;
   margin-bottom: 50px;
+}
+
+.video-bg {
+  width: 100%;
+  height: auto;
+  position: relative;
+  .video-img {
+    top: 0
+  }
+}
+
+.video-player-abs {
+  position: absolute;
+  left: 50%;
+  top: 75px;
+}
+
+.top-menu {
+  li:first-child a {
+    text-shadow: none!important;
+  }
+}
+
+.circle-items {
+  &__item {
+    cursor: pointer;
+    opacity: .5;
+    &.active {
+      opacity: 1;
+    }
+  }
+}
+
+.video-player {
+  position: relative;
+  left: -50%;
+}
+
+.geomatics {
+  margin-top: -100px;
 }
 
 @import "responsive";

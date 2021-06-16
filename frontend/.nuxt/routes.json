@@ -7,6 +7,13 @@
     "_name": "_0fc1ea67"
   },
   {
+    "name": "contact",
+    "path": "/contact",
+    "component": "/Users/yuradyatlov/Projects/fracsol-cms/frontend/pages/contact.vue",
+    "chunkName": "pages/contact",
+    "_name": "_490d8ab2"
+  },
+  {
     "path": "/fracsol",
     "component": "/Users/yuradyatlov/Projects/fracsol-cms/frontend/pages/fracsol.vue",
     "chunkName": "pages/fracsol",
@@ -24,6 +31,13 @@
         "component": "/Users/yuradyatlov/Projects/fracsol-cms/frontend/pages/fracsol/fdi.vue",
         "chunkName": "pages/fracsol/fdi",
         "_name": "_0b6268c5"
+      },
+      {
+        "name": "fracsol-ml",
+        "path": "ml",
+        "component": "/Users/yuradyatlov/Projects/fracsol-cms/frontend/pages/fracsol/ml.vue",
+        "chunkName": "pages/fracsol/ml",
+        "_name": "_de701f96"
       },
       {
         "name": "fracsol-owm",

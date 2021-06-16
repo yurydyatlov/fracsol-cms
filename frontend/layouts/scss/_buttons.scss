@@ -23,3 +23,35 @@
     vertical-align: middle;
   }
 }
+
+.btn {
+  transition: opacity 111ms linear;
+  border-radius: 5px!important;
+  padding: 0 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  color: #3a405b;
+  border: none;
+  cursor: pointer;
+  display: block!important;
+  position: relative;
+  opacity: 1;
+  text-transform: uppercase;
+  font-size: 1.4rem!important;
+  letter-spacing: 1px;
+  min-width: auto!important;
+  white-space: nowrap;
+  line-height: 1.4rem;
+  &.primary {
+    border: 2px solid rgba(white, .2);
+    background-image: linear-gradient(to bottom, #768958, #11923b 97%), linear-gradient(189deg, #e48568 143%, rgba(13, 195, 79, 0.36) 18%);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    &:hover {
+      background-color: var(--blue);
+    }
+  }
+}
+

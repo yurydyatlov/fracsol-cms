@@ -4,12 +4,11 @@
 
     <top-navigation></top-navigation>
 
-    <AboutInfo></AboutInfo>
+    <FracsolCircle :currentTab="'ml'"></FracsolCircle>
 
     <footer-main></footer-main>
 
   </div>
-
 
 </template>
 
@@ -18,13 +17,14 @@
 import TopNavigation from "@/layouts/components/top-navigation";
 import FooterMain from "@/layouts/components/footer-main";
 import AboutInfo from "@/layouts/components/about-info";
+import FracsolCircle from "@/layouts/components/fracsol-circle";
+import FdiFeatures from "@/layouts/components/fdi-features";
 
 export default {
-  components: {FooterMain, TopNavigation, AboutInfo},
+  components: {FooterMain, TopNavigation, AboutInfo, FracsolCircle, FdiFeatures},
   data() {
     return {
-      animating: false,
-      mountains: ['ready', 'to', 'test']
+      animating: false
     }
   },
   beforeMount() {
@@ -51,7 +51,7 @@ export default {
   },
   head() {
     return {
-      title: "About Us - Revsolz"
+      title: "ML - Revsolz"
     };
   }
 }

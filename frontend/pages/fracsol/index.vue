@@ -57,7 +57,7 @@
                       VALUE OF GEOMATICS
                     </div>
                     <div class="info-text__content full-opacity m-t-25">
-                      <svg width="700px" style="margin-top: -100px;" height="auto" viewBox="0 0 1310 1427" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <svg width="700px" class="geomatics" height="auto" viewBox="0 0 1310 1427" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <title>Slice</title>
                         <defs>
                           <filter x="-3.3%" y="-3.4%" width="106.6%" height="106.8%" filterUnits="objectBoundingBox" id="filter-1">
@@ -599,7 +599,7 @@ export default {
   },
   head() {
     return {
-      title: "FDI - Fracsol"
+      title: "FracSol - Revsolz"
     };
   }
 }

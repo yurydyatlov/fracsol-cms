@@ -1,22 +1,79 @@
-@media (min-width: 40rem) {
+@media (min-width: 768px) {
   .top-menu {
     display: block!important;
   }
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 768px) {
   .row .column[class*=" column-"] {
     margin-left: 0;
     max-width: 100%;
   }
 
-  .section-standart {
-    height: auto;
-    padding: 100px 0;
+  .fracsol-circle {
+    left: 0;
+    width: 100%;
   }
 
-  .logo-form {
-    top: -50px;
+  .row {
+    display: block;
+  }
+
+  .info-text__title {
+    width: 100%;
+    svg {
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+
+  .about-us-info {
+    padding: 25px 0;
+    &__content {
+      display: block;
+    }
+
+    .info-diagram {
+      left: 0;
+      width: 100%;
+    }
+  }
+
+  .info-text__content {
+    padding: 0 20px;
+    margin-top: 25px;
+  }
+
+  .info-text__title {
+    top: 0;
+  }
+
+  .tab-content {
+    margin-top: 25px;
+  }
+
+  .team-members__item.col-three {
+    flex: 1 0 50%;
+    max-width: 50%;
+  }
+  .team-members__item {
+    flex: 1 0 50%;
+    max-width: 50%;
+  }
+  .info-text__content {
+    margin-top: 0;
+  }
+  .content-begin {
+    padding-top: 50px;
+  }
+
+  .section-standart {
+    height: auto;
+    padding: 25px 0;
+  }
+
+  .features {
+    margin-top: -60px;
   }
 
   .hamburger {
@@ -35,7 +92,7 @@
   }
 
   .navbar ul {
-    margin-top: 60px;
+    margin-top: 50px;
     li {
       float: none;
     }
@@ -43,6 +100,7 @@
 
   .navbar ul {
     height: 0;
+    overflow: hidden;
     transition: all 111ms linear;
   }
 
@@ -200,4 +258,92 @@
   .as-2-cont {
     top: -50px;
   }
+  .centered-column {
+    right: 0!important;
+  }
+  .top-menu {
+    background-image: radial-gradient(circle at 50% 0, #3a3e67, #1b2037 85%);
+  }
+
+  .top-menu {
+    padding: 0 !important;
+  }
+
+  .navbar.active {
+    background-color: var(--common-widget-color);
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 34%);
+  }
+
+  .logo-top {
+    img {
+      width: 130px;
+    }
+  }
+
+  .navbar .top-menu > li {
+    height: 50px;
+  }
+
+  .scrolled .navbar ul {
+    margin-top: 60px;
+    box-shadow: 0 1px 2px #000000e8;
+  }
+
+  .login-button {
+    position: absolute;
+    left: calc(50% - 75px);
+    width: 140px;
+  }
+
+  .video-player-abs {
+    top: 10px;
+    width: 90%;
+  }
+
+  .bottom-footer {
+    height: auto;
+  }
+
+  .contact-info {
+    margin: 10px;
+  }
+
+  .contact-footer {
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+  .info-text__content {
+    margin-top: 15px;
+  }
+  .team-members {
+    margin-top: -20px;
+  }
+
+  .geomatics {
+    margin-top: -50px;
+    width: 100%;
+  }
+
+  .section-standart {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .video-bg {
+    height: 200px;
+  }
+
+  .contact-form {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .btn {
+    width: 100%;
+  }
+  .center-m-o {
+    display: flex;
+    justify-content: center;
+  }
+
 }
