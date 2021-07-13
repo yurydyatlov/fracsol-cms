@@ -6,6 +6,7 @@ let pm2config = {
         "instances": "max",
         "autorestart": true,
         "args": 'start',
+        "script": './node_modules/nuxt/bin/nuxt.js',
         "env": {
           "API_URL": "https://dev-strapi.onyxconnects.io/"
         }
