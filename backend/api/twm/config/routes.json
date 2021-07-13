@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/twm",
+      "handler": "twm.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/twm",
+      "handler": "twm.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/twm",
+      "handler": "twm.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

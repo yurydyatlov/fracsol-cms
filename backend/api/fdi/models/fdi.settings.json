@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "fdis",
+  "info": {
+    "name": "FDI",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "Features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.feature"
+    },
+    "Video": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Intro": {
+      "type": "richtext"
+    }
+  }
+}
