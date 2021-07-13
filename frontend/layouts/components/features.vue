@@ -11,11 +11,11 @@
             <div class="features__item">
 
               <div class="features__item--header">
-                <img :src="require(`~/assets/images/features/${ item.icon }`)" :alt="item.title">
+                <img :src="strapiBaseUri + item.Icon.url" :alt="item.title">
               </div>
 
               <div class="features__item--title">{{ item.title }}</div>
-              <div class="features__item--desc">{{ item.desc }}</div>
+              <div class="features__item--desc">{{ item.Description }}</div>
             </div>
           </div>
 
@@ -25,12 +25,20 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
+
+
+import { strapiBaseUri } from "@/nuxt.config";
 
 export default {
+  props: [
+   'features'
+  ],
   data() {
+
     return {
-      features: [
+      strapiBaseUri
+      /*features: [
         {
           title: 'WIRELESS SENSORS',
           desc: 'Smart, reliable, accurate & ultra-high-resolution wireless pressure sensors. Secure, robust and fast data transmission enables users to make prompt decisions.',
@@ -61,7 +69,7 @@ export default {
           desc: 'This application will automatically learn and improve from lookbacks without being explicitly programmed to predict potential FDI (Fracture Driven Interaction) events.',
           icon: 'ml.png'
         },
-      ]
+      ]*/
     }
   },
   methods: {
@@ -69,6 +77,7 @@ export default {
     }
   },
   mounted() {
+    console.log(this.features);
     this.year = new Date().getFullYear()
   }
 }

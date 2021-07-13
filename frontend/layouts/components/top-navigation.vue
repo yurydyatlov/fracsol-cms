@@ -29,10 +29,33 @@
           </ul>
         </transition>
       </li>
-      <li style="margin-top: 10px;">
-        <a href="https://fracsol.revsolz.com" target="_blank" class="login-button">
+      <li style="margin-top: 10px;" class="login-but-cont">
+
+        <a href="https://fracsol.revsolz.com" target="_blank">
+          <img class="login-but" src="~assets/images/login-button.png" alt="Fracsol Login Button" />
+        </a>
+
+<!--        <svg width="218px" height="60px" viewBox="0 0 218 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Login">
+              <rect id="Rectangle" stroke="url(#linearGradient-1)" stroke-width="3" x="1.5" y="1.5" width="215" height="57" rx="14"></rect>
+              <text font-family="HelveticaNeue, Helvetica Neue" font-size="24" font-weight="normal" fill="#C2CBE9">
+                <tspan x="89.716" y="37">Login</tspan>
+              </text>
+              <g id="Login-Lock" transform="translate(36.000000, 11.000000)">
+                <rect id="Lock-Square" fill-rule="nonzero" x="0" y="0" width="39" height="38"></rect>
+                <path d="M8,26.6842105 L8,18 L32,18 L32,23 C32,28.5228475 27.5228475,33 22,33 L11.2,33 L11.2,33" id="Lock-Bottom" stroke="url(#linearGradient-2)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M29,14 C29,9.02943725 24.9705627,5 20,5 C15.0294373,5 11,9.02943725 11,14 L11,14 L11,14" id="Lock-Top" stroke="url(#linearGradient-3)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                <circle id="Green-Dot-" fill="#49FF00" fill-rule="nonzero" cx="19.5" cy="25.5" r="1.5"></circle>
+              </g>
+            </g>
+          </g>
+        </svg>-->
+
+<!--        <a  class="login-button">
           <img alt="login-icon" src="~assets/images/lock.svg" />
-          Login</a>
+          Login
+        </a>-->
       </li>
     </ul>
 

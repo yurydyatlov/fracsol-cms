@@ -7,11 +7,21 @@
           <div class="mirrored-box about-us-info">
             <div class="mirrored-box__content">
 
-              <div class="about-us-info__content">
-                <svg class="info-diagram" width="600px" height="auto" viewBox="0 0 557 449" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <defs>
+              <div class="about-us-info__content start-align" style="position: relative">
 
-                    <linearGradient x1="50%" y1="133.565594%" x2="50%" y2="0%" id="linearGradient-1">
+                <svg class="about-tabs" viewBox="0 0 717 640" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <defs>
+                    <linearGradient id="linearGradient-1" x1="30%" y1="40%" x2="100%" y2="100%">
+                      <stop offset="0%" style="stop-color:#0E136F;stop-opacity:1" />
+                      <stop offset="60%" style="stop-color:#F10D8A;stop-opacity:1" />
+                      <stop offset="100%" style="stop-color:#F00D8A;stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient x1="30.4401898%" y1="67.1557348%" x2="63.8984948%" y2="35.8776459%" id="linearGradient-2">
+                      <stop stop-color="#FFE524" offset="0%"></stop>
+                      <stop stop-color="#890A7D" offset="98.4402316%"></stop>
+                      <stop stop-color="#061037" offset="100%"></stop>
+                    </linearGradient>
+                    <linearGradient x1="50%" y1="133.565594%" x2="50%" y2="0%" id="linearGradient-3">
                       <stop stop-color="#34CCFF" offset="0%"></stop>
                       <stop stop-color="#14C8EA" offset="0%"></stop>
                       <stop stop-color="#5CC766" offset="49.073763%"></stop>
@@ -19,62 +29,43 @@
                       <stop stop-color="#213B92" offset="100%"></stop>
                       <stop stop-color="#0B450D" offset="100%"></stop>
                     </linearGradient>
-
-                    <linearGradient x1="30.4401898%" y1="67.1557348%" x2="63.8984948%" y2="35.8776459%"
-                                    id="linearGradient-2">
-                      <stop stop-color="#FFE524" offset="0%"></stop>
-                      <stop stop-color="#890A7D" offset="98.4402316%"></stop>
-                      <stop stop-color="#061037" offset="100%"></stop>
-                    </linearGradient>
-                    <linearGradient x1="43.6234473%" y1="70.2537121%" x2="71.108498%" y2="100.2741735%"
-                                    id="linearGradient-3">
-                      <stop stop-color="#78107C" offset="0%"></stop>
-                      <stop stop-color="#F10D8A" offset="90.9981235%"></stop>
-                      <stop stop-color="#F00D8A" offset="95%"></stop>
-                      <stop stop-color="#C6ABAB" offset="100%"></stop>
-                    </linearGradient>
                   </defs>
-                  <g class="board-triangle" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-
-                    <path style="cursor: pointer;"
-                          :class="{ active: currentTab === 1 }"
-                          @click="activateStory()"
-                          d="M276.499953,285 L530.999953,423.666667 L529.962363,423.666607 C530.649116,424.142371 530.999953,424.624183 530.999953,425.111111 C530.999953,433.886302 417.056422,441 276.499953,441 C135.943484,441 21.9999532,433.886302 21.9999532,425.111111 C21.9999532,424.624183 22.3507903,424.142371 23.0375438,423.666607 L21.9999532,423.666667 L276.499953,285 Z"
-                          id="Combined-Shape" fill="url(#linearGradient-1)"></path>
-
-                    <path style="cursor: pointer;" @click="activateTeam()"
-                          :class="{ active: currentTab === 3 }"
-                          d="M284.999953,11 L285.646953,12.005 C292.637409,7.10498514 354.19765,89.2295565 423.672927,196.026318 L425.780613,199.270072 C496.114366,307.642626 547.409046,399.507239 540.350584,404.455571 C539.878338,404.78661 539.156867,404.720224 538.200569,404.275654 L538.66733,405 L287.595761,269.147642 L285.03254,14.5916078 C284.992384,14.1335515 284.98929,13.7300982 285.023939,13.3824669 L284.999953,11 Z"
-                          id="Combined-Shape" fill="url(#linearGradient-2)"></path>
-
-                    <path style="cursor: pointer;" @click="activateBoard()"
-                          :class="{ active: currentTab === 2 }"
-                          d="M266.999953,11 L264.408908,269.147642 L13.7979433,405 L14.5044994,403.900598 C13.191231,404.667216 12.2300924,404.864282 11.648131,404.455585 C4.60262784,399.507238 55.8032471,307.642569 126.00802,199.269947 C196.212794,90.8973246 258.836602,7.05525624 265.882316,12.0032893 C265.991428,12.079923 266.08657,12.1774026 266.167888,12.2954665 L266.999953,11 Z"
-                          id="Combined-Shape" fill="url(#linearGradient-3)"></path>
-
-                    <text style="cursor: pointer;font-family: var(--main-font)" @click="activateTeam()" id="TEAM"
-                          :class="{ active: currentTab === 3 }"
-                          transform="translate(403.690184, 304.797476) rotate(27.000000) translate(-403.690184, -304.797476) "
-                          font-family="Geneva" font-size="40" font-weight="normal" fill="#FFFFFF">
-                      <tspan x="336.768255" y="316.771149">TEAM</tspan>
-                    </text>
-                    <text style="cursor: pointer;" @click="activateBoard()" id="BOARD"
-                          :class="{ active: currentTab === 2 }"
-                          transform="translate(191.383632, 274.508426) rotate(-28.000000) translate(-191.383632, -274.508426) "
-                          font-family="Geneva" font-size="40" font-weight="normal" fill="#FFFFFF">
-                      <tspan x="119.206054" y="286.482098" style="font-family: var(--main-font)">BOARD</tspan>
-                    </text>
-                    <text style="cursor: pointer;" @click="activateStory()" id="OUR-STORY" font-family="Geneva"
-                          :class="{ active: currentTab === 1 }"
-                          font-size="40" font-weight="normal" fill="#FFFFFF">
-                      <tspan x="165.248" y="416" style="font-family: var(--main-font)">OUR STORY</tspan>
-                    </text>
+                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g transform="translate(96.000000, 92.000000)">
+<!--                      <path d="M287.077531,299 L541.577531,437.666667 L540.53994,437.666607 C541.226694,438.142371 541.577531,438.624183 541.577531,439.111111 C541.577531,447.886302 427.634,455 287.077531,455 C146.521062,455 32.5775309,447.886302 32.5775309,439.111111 C32.5775309,438.624183 32.928368,438.142371 33.6151214,437.666607 L32.5775309,437.666667 L287.077531,299 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>-->
+<!--                      <path d="M295.577531,25 L296.224531,26.005 C303.214986,21.1049851 364.775228,103.229557 434.250504,210.026318 L436.35819,213.270072 C506.691943,321.642626 557.986624,413.507239 550.928162,418.455571 C550.455916,418.78661 549.734444,418.720224 548.778147,418.275654 L549.244908,419 L298.173338,283.147642 L295.610117,28.5916078 C295.569962,28.1335515 295.566868,27.7300982 295.601517,27.3824669 L295.577531,25 Z" id="Combined-Shape" fill="url(#linearGradient-2)"></path>-->
+                      <g @mouseover="hoveredBoard = true;activateBoard();" @mouseout="hoveredBoard = false" class="path-action"
+                         :class="{ active: currentTab === 2 }"
+                         @click="activateBoard()">
+                        <path :d="getPathBoard()" style="transition: all 111ms linear;" fill="url(#linearGradient-1)"></path>
+                        <text id="BOARD" transform="translate(159.961209, 309.508426) rotate(-28.000000) translate(-159.961209, -309.508426) " font-family="Geneva" font-size="40" font-weight="normal" fill="#FFFFFF">
+                          <tspan x="90" y="285">BOARD</tspan>
+                        </text>
+                      </g>
+                      <g @mouseover="hoveredTeam = true;activateTeam()" @mouseout="hoveredTeam = false;" class="path-team"
+                         :class="{ active: currentTab === 3 }"
+                         @click="activateTeam()">
+                        <path :d="getPathTeam()" style="transition: all 111ms linear;" fill="url(#linearGradient-2)"></path>
+                        <text id="TEAM" transform="translate(400, 285) rotate(29.000000) translate(-408.267762, -305.797476) " font-family="Geneva" font-size="40" font-weight="normal" fill="#FFFFFF">
+                          <tspan x="341.345832" y="317.771149">TEAM</tspan>
+                        </text>
+                      </g>
+                      <g @mouseover="hoveredStory = true;activateStory()" @mouseout="hoveredStory = false" class="path-story"
+                         :class="{ active: currentTab === 1 }"
+                         @click="activateStory()">
+                        <path :d="getPathStory()" style="transition: all 111ms linear;" fill="url(#linearGradient-3)"></path>
+                        <text id="OUR-STORY" font-family="Geneva" font-size="40" font-weight="normal" fill="#FFFFFF">
+                          <tspan x="160" y="390">OUR STORY</tspan>
+                        </text>
+                      </g>
+                    </g>
                   </g>
                 </svg>
+
+
                 <div class="info-text">
-                  <div class="info-text__content" v-show="currentTab === 0">
-                    RevSolz Corp. is a progressive company providing <br /> frac solutions in the Oil & Gas Industry. <br /><br />
-                    RevSolz's visionary and talented team is developing <br /> the most comprehensive, unique, interactive & AI/ML<br /> infused cloud-based software for the oilfield.
+
+                  <div class="info-text__content about-content" v-show="currentTab === 0" v-html="$md.render(intro)">
                   </div>
 
                   <div class="tab-content" v-show="currentTab === 1">
@@ -82,15 +73,7 @@
                       OUR STORY
                     </div>
                     <div class="info-text__content full-opacity">
-                      RevSolz was founded by small group of highly experienced, talented, and determined professionals with extensive, and diversified oil & gas industry experiences. <br /><br />
-
-                      While working for many years in the industry they encountered that finding optimum solutions is hard in well completions. The right solution with essential features, easy access and high-level expertise is even harder,that’s why RevSolz was born to fill that gap. <br /><br />
-
-                      Imagine a world where your companies completion data acquisition is smart and connected. Envision a cloud-based brain working round the clock with predictive alerts and stunning visualizations, RevSolz makes this game changing dream a reality. <br /><br />
-
-                      RevSolz is the industry's most comprehensive and unique frac solution provider with surface monitoring & analytics, supplying clients with all the smart monitoring devices for data acquisition and comprehensive cloud-based software. <br /><br />
-
-                      We are a team of industry and technology experts who are focused to bring revolutionary frac solutions with modern, interactive & AI/ML infused software to the oilfield.
+                      <div v-html="$md.render(story)"></div>
                     </div>
                   </div>
 
@@ -104,7 +87,7 @@
                           <div class="team-members__item col-three">
                             <div class="avatar-box">
                               <div class="avatar-box__image">
-                                <div class="avatar-box__photo-cont" :style="{ backgroundImage: `url('${ require(`~/assets/images/team/${ item.photo }`) }')` }"></div>
+                                <div class="avatar-box__photo-cont" :style="{ backgroundImage: `url('${ strapiBaseUri + item.photo.url }')` }"></div>
                               </div>
                             </div>
 
@@ -135,7 +118,7 @@
                           <div class="team-members__item">
                             <div class="avatar-box">
                               <div class="avatar-box__image">
-                                <div class="avatar-box__photo-cont" :style="{ backgroundImage: `url('${ require(`~/assets/images/team/${ item.photo }`) }')` }"></div>
+                                <div class="avatar-box__photo-cont" :style="{ backgroundImage: `url('${ strapiBaseUri + item.photo.url }')` }"></div>
                               </div>
                             </div>
 
@@ -174,7 +157,6 @@
 
                   <div class="tab-content">
 
-
                     <div class="left-bg-container">
                       <img src="~assets/images/mission.png" />
                     </div>
@@ -185,8 +167,7 @@
                     <div class="info-text__title">
                       MISSION
                     </div>
-                    <div class="info-text__content full-opacity m-t-25">
-                      To deliver cutting-edge IoT Frac Solutions to Oil & Gas Sector.
+                    <div class="info-text__content full-opacity m-t-25" v-html="$md.render(mission)">
                     </div>
                   </div>
 
@@ -220,8 +201,7 @@
                     <div class="info-text__title">
                       VISION
                     </div>
-                    <div class="info-text__content full-opacity m-t-25">
-                      Becoming the exemplary driver in the process of digital transformation.
+                    <div class="info-text__content full-opacity m-t-25" v-html="$md.render(vision)">
                     </div>
                   </div>
 
@@ -266,86 +246,32 @@
 </template>
 
 <script>
+
+import { strapiBaseUri } from "@/nuxt.config";
+
 export default {
+  props: ['team', 'board', 'story', 'intro', 'vision', 'mission'],
   data() {
     return {
+      strapiBaseUri,
       currentTab: 0,
-      team: [
-        {
-          fullname: 'Marc Mukhtarli',
-          title: 'President & Co-founder',
-          photo: 'Marc Mukhtarli Photo.png'
-        },
-        {
-          fullname: 'Joseph Gharibi',
-          title: 'VP & Co-founder',
-          extraInfo: '(Business Development)',
-          photo: 'Joseph Gharibi Photo.png'
-        },
-        {
-          fullname: 'Joseph Sheikhi',
-          title: 'Manager & Co-founder ',
-          extraTitle: '(Engineering & Technology)',
-          photo: 'Joseph Sheiki Photo.png'
-        },
-        {
-          fullname: 'Elkhan Shahverdi',
-          title: 'DevOps Engineer',
-          photo: 'Elkhan Shaverdi.png'
-        },
-        {
-          fullname: 'Marty Stromquist',
-          title: 'Board Director',
-          extraTitle: '(Co-founder of NCS)',
-          photo: 'Marty Stromquist Photo.png'
-        },
-        {
-          fullname: 'Don Getzlaf',
-          title: 'Board Director',
-          extraTitle: '(Co-founder of NCS)',
-          photo: 'Don Getzlaf Photo.png'
-        },
-        {
-          fullname: 'Peter Garrett',
-          title: 'Board Director',
-          extraTitle: '(Partner of GGTCPA)',
-          photo: 'Peter Garrett Photo.png'
-        },
-      ],
-      board: [
-        {
-          fullname: 'Marty Stromquist',
-          title: 'Board Director',
-          extraTitle: '(Co-founder of NCS)',
-          photo: 'Marty Stromquist Photo.png'
-        },
-        {
-          fullname: 'Don Getzlaf',
-          title: 'Board Director',
-          extraTitle: '(Co-founder of NCS)',
-          photo: 'Don Getzlaf Photo.png'
-        },
-        {
-          fullname: 'Peter Garrett',
-          title: 'Board Director',
-          extraTitle: '(Partner of GGTCPA)',
-          photo: 'Peter Garrett Photo.png'
-        },
-        {
-          fullname: 'Marc Mukhtarli',
-          title: 'President & Co-founder',
-          photo: 'Marc Mukhtarli Photo.png'
-        },
-        {
-          fullname: 'Joseph Gharibi',
-          title: 'VP & Co-founder',
-          extraInfo: '(Business Development)',
-          photo: 'Joseph Gharibi Photo.png'
-        },
-      ]
+      hoveredBoard: false,
+      hoveredTeam: false,
+      hoveredStory: false,
+      svgWidth: 300,
+      svgHeight: 300,
     }
   },
   methods: {
+    getPathBoard: function () {
+      return `M255.999953,0 L253.408908,258.147642 L2.79794327,394 L3.50449937,392.900598 C2.19123099,393.667216 1.23009244,393.864282 0.648130959,393.455585 C-6.39737216,388.507238 44.8032471,296.642569 115.00802,188.269947 C185.212794,79.8973246 247.836602,-3.94474376 254.882316,1.0032893 C254.991428,1.07992298 255.08657,1.17740256 255.167888,1.29546651 L255.999953,0 Z`;
+    },
+    getPathTeam: function () {
+      return `M273.999953,0 L274.646953,1.005 C281.637409,-3.89501486 343.19765,78.2295565 412.672927,185.026318 L414.780613,188.270072 C485.114366,296.642626 536.409046,388.507239 529.350584,393.455571 C528.878338,393.78661 528.156867,393.720224 527.200569,393.275654 L527.66733,394 L276.595761,258.147642 L274.03254,3.59160782 C273.992384,3.13355152 273.98929,2.7300982 274.023939,2.38246694 L273.999953,0 Z`;
+    },
+    getPathStory: function () {
+      return `M265.499953,274 L519.999953,412.666667 L518.962363,412.666607 C519.649116,413.142371 519.999953,413.624183 519.999953,414.111111 C519.999953,422.886302 406.056422,430 265.499953,430 C124.943484,430 10.9999532,422.886302 10.9999532,414.111111 C10.9999532,413.624183 11.3507903,413.142371 12.0375438,412.666607 L10.9999532,412.666667 L265.499953,274 Z`;
+    },
     activateStory: function () {
       this.currentTab = 1;
     },

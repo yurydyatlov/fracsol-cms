@@ -1,4 +1,5 @@
-const strapiBaseUri = process.env.API_URL || "http://localhost:1337";
+export const strapiBaseUri = process.env.API_URL || "http://localhost:1337";
+
 export default {
     target: "static",
     server: {
@@ -28,7 +29,8 @@ export default {
     ],
     plugins: [
         '~/plugins/globals.js',
-        {src: "~/plugins/aos", ssr: false}
+        {src: "~/plugins/aos", ssr: false},
+        {src: '~/plugins/snap.js', ssr: false},
     ],
     components: true,
     modules: [
@@ -38,7 +40,7 @@ export default {
         "@nuxtjs/strapi"
     ],
     optimizedImages: {
-        optimizeImages: true,
+        optimizeImages: false,
     },
     strapi: {
         url: strapiBaseUri,
@@ -67,5 +69,5 @@ export default {
         breaks: true,
         injected: true,
         html: true,
-    },
+    }
 };

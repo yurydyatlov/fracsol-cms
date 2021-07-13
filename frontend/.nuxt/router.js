@@ -11,7 +11,6 @@ const _0b6268c5 = () => interopDefault(import('../pages/fracsol/fdi.vue' /* webp
 const _de701f96 = () => interopDefault(import('../pages/fracsol/ml.vue' /* webpackChunkName: "pages/fracsol/ml" */))
 const _081eefdf = () => interopDefault(import('../pages/fracsol/owm.vue' /* webpackChunkName: "pages/fracsol/owm" */))
 const _109e1824 = () => interopDefault(import('../pages/fracsol/twm.vue' /* webpackChunkName: "pages/fracsol/twm" */))
-const _6d0b00a8 = () => interopDefault(import('../pages/technology-and-solutions.vue' /* webpackChunkName: "pages/technology-and-solutions" */))
 const _78fc73ce = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 // TODO: remove in Nuxt 3
@@ -62,10 +61,6 @@ export const routerOptions = {
       component: _109e1824,
       name: "fracsol-twm"
     }]
-  }, {
-    path: "/technology-and-solutions",
-    component: _6d0b00a8,
-    name: "technology-and-solutions"
   }, {
     path: "/",
     component: _78fc73ce,

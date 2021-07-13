@@ -24,10 +24,10 @@
                         CONTACT US
                       </div>
                       <div class="info-text__content italic m-t-25">
-                        Use the form below or email us at contact@revsolz.com.
+                        <div v-if="title" v-html="$md.render(title)"></div>
                       </div>
 
-                      <div class="info-text__content italic m-t-25">
+                      <div class="info-text__content italic contact-inputs">
 
                         <div class="input-bg-element">
                           <input placeholder="Email" />
@@ -37,14 +37,14 @@
                           <input placeholder="Phone" />
                         </div>
 
-                        <div class="input-bg-element" style="height: 54px">
+                        <div class="input-bg-element" style="height: 55px">
                           <textarea placeholder="Message" />
                         </div>
 
                         <br />
 
                         <div class="d-f-center">
-                          <button class="btn primary">Submit</button>
+                          <img src="~assets/images/submit.png" class="submit-btn" alt="Contact" />
                         </div>
 
                       </div>
@@ -78,14 +78,22 @@
 import TopNavigation from "@/layouts/components/top-navigation";
 import FooterMain from "@/layouts/components/footer-main";
 import AboutInfo from "@/layouts/components/about-info";
+import { formatSeo } from "@/utils/seo";
 
 export default {
   components: {FooterMain, TopNavigation, AboutInfo},
   data() {
     return {
       animating: false,
-      mountains: ['ready', 'to', 'test']
+      seo: '',
+      title: ''
+
     }
+  },
+  async fetch() {
+    let res = await this.$strapi.find('contact-us');
+    this.seo = res['SEO'];
+    this.title = res['Title'];
   },
   beforeMount() {
   },
@@ -110,9 +118,7 @@ export default {
     },
   },
   head() {
-    return {
-      title: "Contact Us - Revsolz"
-    };
+    return formatSeo(this.seo);
   }
 }
 </script>

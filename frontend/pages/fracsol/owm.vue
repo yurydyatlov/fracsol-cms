@@ -4,23 +4,25 @@
 
     <top-navigation></top-navigation>
 
-    <FracsolCircle :currentTab="'owm'"></FracsolCircle>
+    <FracsolCircle :currentTab="'owm'" :owmIntro="owmIntro"></FracsolCircle>
 
     <section>
-      <OwmFeatures></OwmFeatures>
+      <OwmFeatures :features="owmFeatures"></OwmFeatures>
     </section>
 
     <section class="section-standart">
       <div class="video-bg">
-        <img :src="`${ require('~/assets/images/owm-screen-bg.png') }`" class="video-img" alt="TWM Video Bg">
-
+        <img :src="`${ require('~/assets/images/owm-screen-bg.png') }`" class="video-img" alt="OWM Video Bg">
         <div class="video-player-abs">
           <div class="video-player">
-            <img style="cursor: pointer;" :src="`${ require('~/assets/images/owm-player.png') }`" />
+            <img style="cursor: pointer;" :src="`${ require('~/assets/images/owm-player.png') }`" @click="videoPlayMode = true" v-if="!videoPlayMode" />
+            <video width="100%" height="100%" controls v-if="videoPlayMode" autoplay>
+              <source :src="strapiBaseUri + video" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </div>
-
     </section>
 
     <footer-main></footer-main>
@@ -36,12 +38,28 @@ import FooterMain from "@/layouts/components/footer-main";
 import AboutInfo from "@/layouts/components/about-info";
 import FracsolCircle from "@/layouts/components/fracsol-circle";
 import OwmFeatures from "@/layouts/components/owm-features";
+import { strapiBaseUri } from "@/nuxt.config";
+import { formatSeo } from "@/utils/seo";
 
 export default {
   components: {FooterMain, TopNavigation, AboutInfo, FracsolCircle, OwmFeatures},
+  async fetch() {
+    let res = await this.$strapi.find('owm');
+    this.seo = res['SEO'];
+    this.owmFeatures = res['Features'];
+    this.owmIntro = res['Intro'];
+    if (res['Video']) {
+      this.video = res['Video'].url;
+    }
+  },
   data() {
     return {
-      animating: false
+      strapiBaseUri,
+      animating: false,
+      videoPlayMode: false,
+      owmFeatures: [],
+      owmIntro: '',
+      video: ''
     }
   },
   beforeMount() {
@@ -51,9 +69,7 @@ export default {
   methods: {
   },
   head() {
-    return {
-      title: "OWM - Revsolz"
-    };
+    return formatSeo(this.seo);
   }
 }
 </script>

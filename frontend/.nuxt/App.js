@@ -8,16 +8,18 @@ import NuxtBuildIndicator from './components/nuxt-build-indicator'
 import '../layouts/scss/main.scss'
 
 import _ff083d5e from '../layouts/components/about-info.vue'
+import _5fe55904 from '../layouts/components/animated-lights.vue'
 import _0b13c602 from '../layouts/components/fdi-features.vue'
 import _6f1f6f60 from '../layouts/components/features.vue'
 import _5f778eb0 from '../layouts/components/footer-main.vue'
 import _adc31e04 from '../layouts/components/fracsol-circle.vue'
+import _049dbaa8 from '../layouts/components/ml-features.vue'
 import _2e719f28 from '../layouts/components/owm-features.vue'
 import _464d3b22 from '../layouts/components/top-navigation.vue'
 import _54e9da03 from '../layouts/components/twm-features.vue'
 import _6f6c098b from '../layouts/default.vue'
 
-const layouts = { "_components/about-info": sanitizeComponent(_ff083d5e),"_components/fdi-features": sanitizeComponent(_0b13c602),"_components/features": sanitizeComponent(_6f1f6f60),"_components/footer-main": sanitizeComponent(_5f778eb0),"_components/fracsol-circle": sanitizeComponent(_adc31e04),"_components/owm-features": sanitizeComponent(_2e719f28),"_components/top-navigation": sanitizeComponent(_464d3b22),"_components/twm-features": sanitizeComponent(_54e9da03),"_default": sanitizeComponent(_6f6c098b) }
+const layouts = { "_components/about-info": sanitizeComponent(_ff083d5e),"_components/animated-lights": sanitizeComponent(_5fe55904),"_components/fdi-features": sanitizeComponent(_0b13c602),"_components/features": sanitizeComponent(_6f1f6f60),"_components/footer-main": sanitizeComponent(_5f778eb0),"_components/fracsol-circle": sanitizeComponent(_adc31e04),"_components/ml-features": sanitizeComponent(_049dbaa8),"_components/owm-features": sanitizeComponent(_2e719f28),"_components/top-navigation": sanitizeComponent(_464d3b22),"_components/twm-features": sanitizeComponent(_54e9da03),"_default": sanitizeComponent(_6f6c098b) }
 
 export default {
   render (h, props) {

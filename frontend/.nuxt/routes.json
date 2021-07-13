@@ -57,13 +57,6 @@
     "_name": "_5460c32e"
   },
   {
-    "name": "technology-and-solutions",
-    "path": "/technology-and-solutions",
-    "component": "/Users/yuradyatlov/Projects/fracsol-cms/frontend/pages/technology-and-solutions.vue",
-    "chunkName": "pages/technology-and-solutions",
-    "_name": "_6d0b00a8"
-  },
-  {
     "name": "index",
     "path": "/",
     "component": "/Users/yuradyatlov/Projects/fracsol-cms/frontend/pages/index.vue",

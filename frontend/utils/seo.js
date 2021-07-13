@@ -58,3 +58,20 @@ export function getMetaTags(seo) {
 
   return tags;
 }
+
+
+export function formatSeo(seo) {
+    if (!seo) {
+        return ;
+    }
+    return {
+        title: seo.metaTitle,
+        meta: [
+            {
+                hid: 'description',
+                name: 'description',
+                content: seo.metaDescription
+            }
+        ],
+    }
+}

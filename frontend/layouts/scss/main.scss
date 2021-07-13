@@ -86,12 +86,23 @@ body {
   font-weight: normal;
   font-size: 1.5rem;
   overflow-x: hidden;
-  background-image: url('~assets/images/dot-bg.png');
   background-repeat: repeat-y;
   background-size: cover;
   background-position-y: 100px;
 }
 
+.lights-animated {
+  position: fixed;
+  z-index: -2;
+  top: 100px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  &.var {
+    top: 50vh;
+    left: -20vw;
+  }
+}
 
 .f-w-h {
   width: 100%;
@@ -998,6 +1009,9 @@ $radius: 4px;
   &__content {
     position: relative;
     display: flex;
+    &.start-align {
+      align-items: flex-start;
+    }
   }
 }
 
@@ -1011,6 +1025,9 @@ $radius: 4px;
   span {
     margin-right: 8px;
     font-weight: bold;
+    font-size: 35px;
+    position: relative;
+    top: 6px;
   }
 }
 
@@ -1023,7 +1040,7 @@ $radius: 4px;
     padding: 0 50px;
     text-align: center;
     font-size: 2.1rem;
-    color: rgba(#c2cbe9, .4);
+    color: rgba(#c2cbe9, .9);
     &.italic {
       font-size: 1.6rem;
       color: #C2CBE9;
@@ -1042,7 +1059,10 @@ $radius: 4px;
     opacity: 0.7;
     font-size: 3.0rem;
     text-align: center;
-    color: rgba(#c2cbe9, .4);
+    color: rgba(#c2cbe9, .8);
+    &--with-shadow {
+      text-shadow: 0 6px 12px #000000ba;
+    }
   }
 }
 
@@ -1050,15 +1070,15 @@ $radius: 4px;
   width: 200px;
   position: absolute;
   left: 40px;
-  top: 20px;
+  top: 15px;
   opacity: .5;
 }
 
 .left-cut-bg-container {
-  width: 270px;
+  width: 200px;
   position: absolute;
   left: 0;
-  top: 0;
+  top: -37px;
 }
 
 .right-bg-container {
@@ -1068,10 +1088,13 @@ $radius: 4px;
   top: 20px;
 }
 .right-cut-bg-container {
-  width: 200px;
+  width: auto;
   position: absolute;
   right: 0;
   top: 0;
+  img {
+    width: 125px;
+  }
 }
 
 .min-height-content-250 {
@@ -1081,7 +1104,7 @@ $radius: 4px;
 .board-triangle {
 
   path, text {
-    opacity: .5;
+    /*opacity: .5;*/
     &.active {
       opacity: 1;
     }
@@ -1101,10 +1124,12 @@ $radius: 4px;
   left: -25px;
 }
 
-.common-ul {
+.common-ul, .has-list ul {
   text-align: left;
   line-height: 1.8rem;
   margin-bottom: 50px;
+  list-style-type: disc;
+  margin-left: 50px;
 }
 
 .video-bg {
@@ -1141,10 +1166,76 @@ $radius: 4px;
 .video-player {
   position: relative;
   left: -50%;
+  width: 600px;
+  height: 341px;
+  video {
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+  }
 }
 
 .geomatics {
   margin-top: -100px;
+}
+
+.login-but {
+  width: 125px;
+  margin-top: 4px;
+}
+
+.login-but-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    padding: 0!important;
+  }
+}
+
+.path-action {
+  cursor: pointer;
+  transform: translate3d(0, 0, 0);
+  &:hover, &.active {
+    transform: scale(1.1) translate3d(-25px, -25px, 0);
+  }
+}
+
+.path-team {
+  cursor: pointer;
+  transform: translate3d(0, 0, 0);
+  &:hover, &.active {
+    transform: scale(1.1) translate3d(-25px, -25px, 0);
+  }
+}
+
+
+.path-story {
+  cursor: pointer;
+  transform: translate3d(0, 0, 0);
+  &:hover, &.active {
+    transform: scale(1.1) translate3d(-25px, -25px, 0);
+  }
+}
+
+.about-tabs {
+  width: 600px;
+  margin-right: -50px;
+}
+
+.about-content {
+  margin-top: 95px;
+}
+
+.submit-btn {
+  cursor: pointer;
+  width: 130px;
+}
+
+.contact-inputs {
+  margin-top: 60px;
 }
 
 @import "responsive";

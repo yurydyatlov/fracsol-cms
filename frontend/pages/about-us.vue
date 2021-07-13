@@ -4,7 +4,14 @@
 
     <top-navigation></top-navigation>
 
-    <AboutInfo></AboutInfo>
+    <AboutInfo
+        :team="team"
+        :board="board"
+        :intro="intro"
+        :story="story"
+        :mission="mission"
+        :vision="vision">
+    </AboutInfo>
 
     <footer-main></footer-main>
 
@@ -18,41 +25,39 @@
 import TopNavigation from "@/layouts/components/top-navigation";
 import FooterMain from "@/layouts/components/footer-main";
 import AboutInfo from "@/layouts/components/about-info";
+import { formatSeo } from "@/utils/seo";
 
 export default {
   components: {FooterMain, TopNavigation, AboutInfo},
+  scrollToTop: true,
   data() {
     return {
       animating: false,
-      mountains: ['ready', 'to', 'test']
+      story: '',
+      intro: '',
+      mission: '',
+      vision: '',
+      team: [],
+      board: []
     }
+  },
+  async fetch() {
+    let res = await this.$strapi.find('about-us');
+    this.seo = res['SEO'];
+    this.team = res['Board'];
+    this.board = res['Team'];
+    this.story = res['Story'];
+    this.intro = res['Intro'];
+    this.mission = res['Mission'];
+    this.vision = res['Vision'];
   },
   beforeMount() {
   },
   mounted() {
   },
-  methods: {
-    scrollToElement() {
-
-      /*this.scrollTo(null, 55);*/
-
-      /*bringIntoView(document.querySelector('#con'), 400);*/
-      this.$forceUpdate()
-
-      /*el.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});*/
-
-      /*if (el) {
-        el.scrollIntoView({
-          block: "start",
-          behavior: "smooth",
-        });
-      }*/
-    },
-  },
+  methods: {},
   head() {
-    return {
-      title: "About Us - Revsolz"
-    };
+    return formatSeo(this.seo);
   }
 }
 </script>
