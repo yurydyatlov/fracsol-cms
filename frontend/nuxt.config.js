@@ -1,5 +1,7 @@
 export const strapiBaseUri = process.env.API_URL || "http://localhost:1337";
 
+console.log(strapiBaseUri);
+
 export default {
     target: "server",
     server: {
