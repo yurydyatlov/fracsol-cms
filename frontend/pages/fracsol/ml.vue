@@ -16,7 +16,7 @@
             <img style="cursor: pointer;" :src="`${ require('~/assets/images/fdi-player.png') }`"
                  @click="videoPlayMode = true" v-if="!videoPlayMode"/>
             <video width="100%" height="100%" controls v-if="videoPlayMode" autoplay>
-              <source :src="strapiBaseUri + video" type="video/mp4">
+              <source :src="process.env.strapiBaseUri + video" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>
@@ -39,7 +39,7 @@ import FracsolCircle from "@/layouts/components/fracsol-circle";
 import FdiFeatures from "@/layouts/components/fdi-features";
 import MlFeatures from "@/layouts/components/ml-features";
 
-import { strapiBaseUri } from "@/nuxt.config";
+
 import { formatSeo } from "@/utils/seo";
 
 export default {

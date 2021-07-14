@@ -87,7 +87,7 @@
                           <div class="team-members__item col-three">
                             <div class="avatar-box">
                               <div class="avatar-box__image">
-                                <div class="avatar-box__photo-cont" :style="{ backgroundImage: `url('${ strapiBaseUri + item.photo.url }')` }"></div>
+                                <div class="avatar-box__photo-cont" :style="{ backgroundImage: `url('${ process.env.strapiBaseUri + item.photo.url }')` }"></div>
                               </div>
                             </div>
 
@@ -118,7 +118,7 @@
                           <div class="team-members__item">
                             <div class="avatar-box">
                               <div class="avatar-box__image">
-                                <div class="avatar-box__photo-cont" :style="{ backgroundImage: `url('${ strapiBaseUri + item.photo.url }')` }"></div>
+                                <div class="avatar-box__photo-cont" :style="{ backgroundImage: `url('${ process.env.strapiBaseUri + item.photo.url }')` }"></div>
                               </div>
                             </div>
 
@@ -247,13 +247,12 @@
 
 <script>
 
-import { strapiBaseUri } from "@/nuxt.config";
+
 
 export default {
   props: ['team', 'board', 'story', 'intro', 'vision', 'mission'],
   data() {
-    return {
-      strapiBaseUri,
+    return {,
       currentTab: 0,
       hoveredBoard: false,
       hoveredTeam: false,

@@ -13,7 +13,7 @@
             <div class="features__item">
 
               <div class="features__item--header">
-                <img :src="strapiBaseUri + item.Icon.url" :alt="item.title">
+                <img :src="process.env.strapiBaseUri + item.Icon.url" :alt="item.title">
               </div>
 
               <div class="features__item--title">{{ item.title }}</div>
@@ -29,13 +29,12 @@
 
 <script>
 
-import { strapiBaseUri } from "@/nuxt.config";
+
 
 export default {
   props: ['features'],
   data() {
     return {
-      strapiBaseUri
     }
   },
   methods: {
