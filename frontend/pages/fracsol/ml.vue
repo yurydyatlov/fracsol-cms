@@ -56,7 +56,6 @@ export default {
   data() {
     return {
       animating: false,
-      strapiBaseUri: strapiBaseUri,
       mlFeatures: [],
       mlIntro: ''
     }

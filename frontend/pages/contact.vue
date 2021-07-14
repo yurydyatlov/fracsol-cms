@@ -87,7 +87,6 @@ export default {
       animating: false,
       seo: '',
       title: ''
-
     }
   },
   async fetch() {

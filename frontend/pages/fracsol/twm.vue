@@ -56,7 +56,7 @@ export default {
     this.video = res['Video']['url']
   },
   data() {
-    return {,
+    return {
       animating: false,
       videoPlayMode: false,
       twmFeatures: [],

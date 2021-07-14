@@ -252,7 +252,7 @@
 export default {
   props: ['team', 'board', 'story', 'intro', 'vision', 'mission'],
   data() {
-    return {,
+    return {
       currentTab: 0,
       hoveredBoard: false,
       hoveredTeam: false,

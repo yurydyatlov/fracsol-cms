@@ -44,7 +44,7 @@ import { formatSeo } from "@/utils/seo";
 export default {
   components: {FooterMain, TopNavigation, AboutInfo, FracsolCircle, FdiFeatures},
   data() {
-    return {,
+    return {
       animating: false,
       videoPlayMode: false,
       fdiFeatures: [],

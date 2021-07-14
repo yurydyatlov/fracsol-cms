@@ -14,7 +14,6 @@
 import TopNavigation from "@/layouts/components/top-navigation";
 import FooterMain from "@/layouts/components/footer-main";
 import AboutInfo from "@/layouts/components/about-info";
-import { formatSeo } from "@/utils/seo";
 
 export default {
   components: {FooterMain, TopNavigation, AboutInfo},

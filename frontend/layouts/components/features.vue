@@ -27,9 +27,6 @@
 
 <script>
 
-
-
-
 export default {
   props: [
    'features'
