@@ -18,9 +18,12 @@
           <div class="video-player">
             <img style="cursor: pointer;" :src="`${ require('~/assets/images/twm-player.png') }`" @click="videoPlayMode = true" v-if="!videoPlayMode" />
             <video width="100%" height="100%" controls v-if="videoPlayMode" autoplay>
+              <source :src="strapiBaseUri + video" type="video/webm">
               <source :src="strapiBaseUri + video" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+
+<!--            <iframe v-if="videoPlayMode" width="100%" height="100%" src="https://www.youtube.com/embed/qtBAlZUk-m0?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
           </div>
         </div>
       </div>

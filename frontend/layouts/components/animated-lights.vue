@@ -110,7 +110,7 @@ export default {
   methods: {
     createNodes() {
       this.nodes = [];
-      for (let i = 0; i <= 25; i++) {
+      for (let i = 0; i <= 50; i++) {
         let comb = this.combs[this.randomIntFromInterval(0, 1)];
         this.nodes.push({
           color: this.colors[this.randomIntFromInterval(0, 5)],
