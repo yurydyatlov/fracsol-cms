@@ -36,6 +36,7 @@ export default {
     modules: [
         '@aceforth/nuxt-optimized-images',
         ['vue-scrollto/nuxt', { offset: -59 }],
+
         "@nuxtjs/markdownit",
         "@nuxtjs/strapi"
     ],

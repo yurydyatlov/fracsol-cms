@@ -13,7 +13,7 @@
             <div class="features__item">
 
               <div class="features__item--header">
-                <img :src="process.env.strapiBaseUri + item.Icon.url" :alt="item.title">
+                <img :src="strapiBaseUri + item.Icon.url" :alt="item.title">
               </div>
 
               <div class="features__item--title">{{ item.title }}</div>
@@ -34,6 +34,7 @@ export default {
   props: ['features'],
   data() {
     return {
+      strapiBaseUri: ''
     }
   },
   methods: {
@@ -41,6 +42,7 @@ export default {
     }
   },
   mounted() {
+    this.strapiBaseUri = process.env.strapiBaseUri;
     this.year = new Date().getFullYear()
   }
 }

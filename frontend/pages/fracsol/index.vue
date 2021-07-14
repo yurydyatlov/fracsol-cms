@@ -99,8 +99,6 @@ export default {
   mounted() {
   },
   methods: {
-    scrollToElement() {
-    },
   },
   head() {
     return formatSeo(this.seo);

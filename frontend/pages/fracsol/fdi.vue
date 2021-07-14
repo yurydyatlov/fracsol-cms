@@ -17,7 +17,7 @@
           <div class="video-player">
             <img style="cursor: pointer;" :src="`${ require('~/assets/images/fdi-player.png') }`" @click="videoPlayMode = true" v-if="!videoPlayMode" />
             <video width="100%" height="100%" controls v-if="videoPlayMode" autoplay>
-              <source :src="process.env.strapiBaseUri + video" type="video/mp4">
+              <source :src="strapiBaseUri + video" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>
@@ -45,6 +45,7 @@ export default {
   components: {FooterMain, TopNavigation, AboutInfo, FracsolCircle, FdiFeatures},
   data() {
     return {
+      strapiBaseUri: '',
       animating: false,
       videoPlayMode: false,
       fdiFeatures: [],
@@ -65,24 +66,9 @@ export default {
   beforeMount() {
   },
   mounted() {
+    this.strapiBaseUri = process.env.strapiBaseUri;
   },
   methods: {
-    scrollToElement() {
-
-      /*this.scrollTo(null, 55);*/
-
-      /*bringIntoView(document.querySelector('#con'), 400);*/
-      this.$forceUpdate()
-
-      /*el.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});*/
-
-      /*if (el) {
-        el.scrollIntoView({
-          block: "start",
-          behavior: "smooth",
-        });
-      }*/
-    },
   },
   head() {
     return formatSeo(this.seo);

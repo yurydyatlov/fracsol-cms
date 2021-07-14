@@ -17,7 +17,7 @@
           <div class="video-player">
             <img style="cursor: pointer;" :src="`${ require('~/assets/images/owm-player.png') }`" @click="videoPlayMode = true" v-if="!videoPlayMode" />
             <video width="100%" height="100%" controls v-if="videoPlayMode" autoplay>
-              <source :src="process.env.strapiBaseUri + video" type="video/mp4">
+              <source :src="strapiBaseUri + video" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>
@@ -54,6 +54,7 @@ export default {
   },
   data() {
     return {
+      strapiBaseUri: '',
       animating: false,
       videoPlayMode: false,
       owmFeatures: [],
@@ -64,6 +65,7 @@ export default {
   beforeMount() {
   },
   mounted() {
+    this.strapiBaseUri = process.env.strapiBaseUri;
   },
   methods: {
   },

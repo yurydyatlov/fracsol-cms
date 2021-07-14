@@ -87,7 +87,7 @@
                           <div class="team-members__item col-three">
                             <div class="avatar-box">
                               <div class="avatar-box__image">
-                                <div class="avatar-box__photo-cont" :style="{ backgroundImage: `url('${ process.env.strapiBaseUri + item.photo.url }')` }"></div>
+                                <div class="avatar-box__photo-cont" :style="{ backgroundImage: `url('${ strapiBaseUri + item.photo.url }')` }"></div>
                               </div>
                             </div>
 
@@ -118,7 +118,7 @@
                           <div class="team-members__item">
                             <div class="avatar-box">
                               <div class="avatar-box__image">
-                                <div class="avatar-box__photo-cont" :style="{ backgroundImage: `url('${ process.env.strapiBaseUri + item.photo.url }')` }"></div>
+                                <div class="avatar-box__photo-cont" :style="{ backgroundImage: `url('${ strapiBaseUri + item.photo.url }')` }"></div>
                               </div>
                             </div>
 
@@ -259,6 +259,7 @@ export default {
       hoveredStory: false,
       svgWidth: 300,
       svgHeight: 300,
+      strapiBaseUri: ''
     }
   },
   methods: {
@@ -282,6 +283,7 @@ export default {
     },
   },
   mounted() {
+    this.strapiBaseUri = process.env.strapiBaseUri;
   }
 }
 </script>
