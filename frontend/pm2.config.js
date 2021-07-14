@@ -8,7 +8,7 @@ let pm2config = {
         "args": 'start',
         "script": './node_modules/nuxt/bin/nuxt.js',
         "env": {
-          "API_URL": "https://dev-strapi.onyxconnects.io/"
+          "API_URL": "http://dev2-api.digitweb.online"
         }
       }
     ]
