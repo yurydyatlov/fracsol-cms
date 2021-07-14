@@ -1,7 +1,7 @@
 export const strapiBaseUri = process.env.API_URL || "http://localhost:1337";
 
 export default {
-    target: "static",
+    target: "server",
     server: {
         port: 3001, // default: 3000
         host: '0.0.0.0', // default: localhost,
