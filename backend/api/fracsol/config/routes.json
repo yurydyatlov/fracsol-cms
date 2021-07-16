@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/fracsol",
+      "handler": "fracsol.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/fracsol",
+      "handler": "fracsol.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/fracsol",
+      "handler": "fracsol.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

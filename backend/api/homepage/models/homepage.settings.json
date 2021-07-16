@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "name": "Homepage",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "Intro": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.hero",
+      "required": true
+    },
+    "Feature": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.feature"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "twms",
+  "info": {
+    "name": "TWM",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Intro": {
+      "type": "richtext"
+    },
+    "Features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.feature"
+    },
+    "Video": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

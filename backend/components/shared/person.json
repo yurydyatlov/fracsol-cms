@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_shared_people",
+  "info": {
+    "name": "Person",
+    "icon": "address-book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "fullname": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "extraTitle": {
+      "type": "string"
+    },
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}
