@@ -1,5 +1,7 @@
 .contact-form {
   margin-left: 175px;
+  max-width: 450px;
+  padding: 0 10px;
 }
 .input-bg-element {
   margin-top: 15px;
@@ -7,6 +9,10 @@
   background-image: linear-gradient(186deg, #E48568, #0DC34F);
   position: relative;
   padding: 2px;
+  &.textarea-cont {
+    box-sizing: border-box;
+    height: 64px;
+  }
   input, textarea {
     margin: 0;
     border: none;
@@ -18,7 +24,7 @@
     font-size: 16px;
   }
   textarea {
-    height: auto;
+    height: 60px;
     resize: none;
     min-height: auto;
   }

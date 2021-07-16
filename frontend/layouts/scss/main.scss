@@ -1041,6 +1041,7 @@ $radius: 4px;
     text-align: center;
     font-size: 2.1rem;
     color: rgba(#c2cbe9, .9);
+
     &.italic {
       font-size: 1.6rem;
       color: #C2CBE9;
@@ -1157,9 +1158,18 @@ $radius: 4px;
   &__item {
     cursor: pointer;
     opacity: .5;
-    &.active {
+    transition: all 55ms linear;
+    &.active, &.hovered, &:hover {
       opacity: 1;
     }
+  }
+}
+
+.center-item {
+  opacity: .5;
+  cursor: pointer;
+  &:hover, &.active {
+    opacity: 1;
   }
 }
 
@@ -1236,6 +1246,10 @@ $radius: 4px;
 
 .contact-inputs {
   margin-top: 60px;
+}
+
+.has-list {
+  min-height: 500px;
 }
 
 @import "responsive";

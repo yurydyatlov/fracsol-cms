@@ -88,8 +88,9 @@ export default {
       colors: [
         '#2DB6D2',
         '#57D22D',
+        '#BDC91A',
+        '#FF601F',
         '#2DD263',
-        '#D22D9E',
         '#2DD2B7',
         '#D22D82',
       ],
@@ -110,10 +111,10 @@ export default {
   methods: {
     createNodes() {
       this.nodes = [];
-      for (let i = 0; i <= 50; i++) {
+      for (let i = 0; i <= window.innerWidth / 30; i++) {
         let comb = this.combs[this.randomIntFromInterval(0, 1)];
         this.nodes.push({
-          color: this.colors[this.randomIntFromInterval(0, 5)],
+          color: this.colors[this.randomIntFromInterval(0, this.colors.length - 1)],
           x: this.randomIntFromInterval(50, window.innerWidth - 50),
           y: this.randomIntFromInterval(50, window.innerHeight - 50),
           width: comb.w,
@@ -127,8 +128,15 @@ export default {
       return Math.floor(Math.random() * (max - min + 1) + min);
     }
   },
+  mounted() {
+    window.addEventListener("resize", () => {
+      this.createNodes();
+    });
+  },
   beforeMount() {
     this.createNodes();
+  },
+  created() {
   }
 }
 </script>

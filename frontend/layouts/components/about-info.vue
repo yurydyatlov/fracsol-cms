@@ -34,7 +34,7 @@
                     <g transform="translate(96.000000, 92.000000)">
 <!--                      <path d="M287.077531,299 L541.577531,437.666667 L540.53994,437.666607 C541.226694,438.142371 541.577531,438.624183 541.577531,439.111111 C541.577531,447.886302 427.634,455 287.077531,455 C146.521062,455 32.5775309,447.886302 32.5775309,439.111111 C32.5775309,438.624183 32.928368,438.142371 33.6151214,437.666607 L32.5775309,437.666667 L287.077531,299 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>-->
 <!--                      <path d="M295.577531,25 L296.224531,26.005 C303.214986,21.1049851 364.775228,103.229557 434.250504,210.026318 L436.35819,213.270072 C506.691943,321.642626 557.986624,413.507239 550.928162,418.455571 C550.455916,418.78661 549.734444,418.720224 548.778147,418.275654 L549.244908,419 L298.173338,283.147642 L295.610117,28.5916078 C295.569962,28.1335515 295.566868,27.7300982 295.601517,27.3824669 L295.577531,25 Z" id="Combined-Shape" fill="url(#linearGradient-2)"></path>-->
-                      <g @mouseover="hoveredBoard = true;activateBoard();" @mouseout="hoveredBoard = false" class="path-action"
+                      <g @mouseover="hoveredBoard = true;" @mouseout="hoveredBoard = false" class="path-action"
                          :class="{ active: currentTab === 2 }"
                          @click="activateBoard()">
                         <path :d="getPathBoard()" style="transition: all 111ms linear;" fill="url(#linearGradient-1)"></path>
@@ -42,7 +42,7 @@
                           <tspan x="90" y="285">BOARD</tspan>
                         </text>
                       </g>
-                      <g @mouseover="hoveredTeam = true;activateTeam()" @mouseout="hoveredTeam = false;" class="path-team"
+                      <g @mouseover="hoveredTeam = true;" @mouseout="hoveredTeam = false;" class="path-team"
                          :class="{ active: currentTab === 3 }"
                          @click="activateTeam()">
                         <path :d="getPathTeam()" style="transition: all 111ms linear;" fill="url(#linearGradient-2)"></path>
@@ -50,7 +50,7 @@
                           <tspan x="341.345832" y="317.771149">TEAM</tspan>
                         </text>
                       </g>
-                      <g @mouseover="hoveredStory = true;activateStory()" @mouseout="hoveredStory = false" class="path-story"
+                      <g @mouseover="hoveredStory = true;" @mouseout="hoveredStory = false" class="path-story"
                          :class="{ active: currentTab === 1 }"
                          @click="activateStory()">
                         <path :d="getPathStory()" style="transition: all 111ms linear;" fill="url(#linearGradient-3)"></path>

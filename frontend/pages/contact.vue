@@ -37,7 +37,7 @@
                           <input placeholder="Phone" />
                         </div>
 
-                        <div class="input-bg-element" style="height: 55px">
+                        <div class="input-bg-element textarea-cont">
                           <textarea placeholder="Message" />
                         </div>
 
