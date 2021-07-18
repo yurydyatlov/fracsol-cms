@@ -24,22 +24,15 @@
                     {{ intro.title }}
                   </h1>
 
-                  <div class="common-text sm common-text--white">
+                  <div class="common-text sm common-text--white" style="max-width: 320px;">
                     {{ intro.main_page }}
                   </div>
-                </div>
-
-                <br/>
-
-                <div class="center-m-o">
-                  <a class="button button-link button-link--white button-clear adjusted">
-                    <img src="~assets/images/url.svg" alt="Learn More">Learn More</a>
                 </div>
               </div>
 
             </div>
 
-            <div class="column column-60 column--no-padding align-content-right" data-aos="flip-up">
+            <div class="column column-60 align-content-right" data-aos="flip-up">
               <img src="~assets/images/home-iot.png" alt="Home IOT"/>
             </div>
 

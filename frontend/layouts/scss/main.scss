@@ -969,9 +969,6 @@ $radius: 4px;
   position: relative;
   z-index: 99;
   right: -101px;
-  .header-title {
-    max-width: 320px;
-  }
 }
 
 .row {
@@ -1017,7 +1014,7 @@ $radius: 4px;
 
 .sticc-lead {
   margin: 0 auto;
-  max-width: 750px;
+  max-width: 100%;
 }
 
 .list-style-none {
@@ -1070,6 +1067,7 @@ $radius: 4px;
 .left-bg-container {
   width: 200px;
   position: absolute;
+  z-index: -1;
   left: 40px;
   top: 15px;
   opacity: .5;

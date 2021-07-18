@@ -14,7 +14,7 @@
           </div>
           <div class="column column-33">
             <div class="contact-info">
-              <a href="https://linkedin.com" target="_blank"><img src="~assets/images/li.png" alt="Linkedin" /></a>
+              <a href="https://www.linkedin.com/company/revsolz" target="_blank"><img src="~assets/images/li.png" alt="Linkedin" /></a>
             </div>
           </div>
           <div class="column column-33">

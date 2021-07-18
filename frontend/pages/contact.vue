@@ -6,7 +6,7 @@
 
     <section class="content-begin">
       <div class="section-with-bg section-standart incline-section">
-        <div class="container">
+        <div class="container" style="max-width: 900px;">
           <div class="mirrored-box about-us-info">
             <div class="mirrored-box__content">
 
